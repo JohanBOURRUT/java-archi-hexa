@@ -54,6 +54,11 @@
                 <artifactId>adapter-in</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>adapter-out</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
             <dependency>
                 <groupId>org.mapstruct</groupId>
@@ -70,19 +75,15 @@
 
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
             <!-- Configuration pour utiliser MapStruct -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

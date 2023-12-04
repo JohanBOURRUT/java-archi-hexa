@@ -30,6 +30,9 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>adapter-in</artifactId>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>adapter-out</artifactId>
+        </dependency>
     </dependencies>
-
 </project>

@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Configuration;
 public class ServicesConfiguration {
 
     @Bean
-    public ICarServiceIn carServiceOut(ICarServiceOut carServiceOut){
+    public ICarServiceIn carServiceIn(ICarServiceOut carServiceOut){
         return new CarServiceIn(carServiceOut);
     }
 
     @Bean
-    public IGarageServiceIn garageServiceOut(IGarageServiceOut garageServiceOut){
+    public IGarageServiceIn garageServiceIn(IGarageServiceOut garageServiceOut){
         return new GarageServiceIn(garageServiceOut);
     }
 

@@ -4,3 +4,5 @@
 /core/target/
 /adapter-out/target/
 /adapter-in/target/
+.idea
+domain/target
